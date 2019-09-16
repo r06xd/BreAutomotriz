@@ -1,0 +1,15 @@
+package com.relative.QuskiAutomotriz;
+
+import java.lang.Number;
+import com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente;
+import com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio;
+
+rule "PoliticaA01"
+	dialect "mvel"
+	ruleflow-group "PoliticaA01"
+	when
+		>variablesNegocio : VariablesNegocio( )
+		>cliente : Cliente( edad < 18 || edad > 75 )
+	then
+		>variablesNegocio.getCodigosPoliticas().add("1");
+end

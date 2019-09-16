@@ -1,0 +1,15 @@
+package com.relative.QuskiAutomotriz;
+
+import java.lang.Number;
+import com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente;
+import com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio;
+
+rule "PoliticaA13"
+	dialect "mvel"
+	ruleflow-group "PoliticaA13"
+	when
+		>variablesNegocio : VariablesNegocio( )
+		>cliente : Cliente( CVencida90D > 0.0 )
+	then
+		>variablesNegocio.getCodigosPoliticas().add("13");
+end

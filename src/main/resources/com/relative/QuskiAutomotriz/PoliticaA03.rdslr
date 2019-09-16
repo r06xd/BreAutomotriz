@@ -1,0 +1,15 @@
+package com.relative.QuskiAutomotriz;
+
+import java.lang.Number;
+import com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente;
+import com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio;
+
+rule "PoliticaA03"
+	dialect "mvel"
+	ruleflow-group "PoliticaA03"
+	when
+		>variablesNegocio : VariablesNegocio( )
+		>cliente : Cliente( eval( (cliente.getMontoFinanciado()/ cliente.getTotalPatrimonio())<=2 ))
+	then
+		>variablesNegocio.getCodigosPoliticas().add("3");
+end

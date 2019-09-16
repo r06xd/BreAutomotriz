@@ -1,0 +1,15 @@
+package com.relative.QuskiAutomotriz;
+
+import java.lang.Number;
+import com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente;
+import com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio;
+
+rule "PoliticaA02"
+	dialect "mvel"
+	ruleflow-group "PoliticaA02"
+	when
+		>variablesNegocio : VariablesNegocio( )
+		>cliente : Cliente( perfil > 3 )
+	then
+		>variablesNegocio.getCodigosPoliticas().add("2");
+end

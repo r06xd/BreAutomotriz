@@ -1,0 +1,15 @@
+package com.relative.QuskiAutomotriz;
+
+import java.lang.Number;
+import com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente;
+import com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio;
+
+rule "PoliticaA10"
+	dialect "mvel"
+	ruleflow-group "PoliticaA10"
+	when
+		>variablesNegocio : VariablesNegocio( )
+		>cliente : Cliente( carteraCastigada > 0.0 )
+	then
+		>variablesNegocio.getCodigosPoliticas().add("10");
+end

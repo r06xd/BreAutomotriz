@@ -1,0 +1,15 @@
+package com.relative.QuskiAutomotriz;
+
+import java.lang.Number;
+import com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente;
+import com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio;
+
+rule "PoliticaA05"
+	dialect "mvel"
+	ruleflow-group "PoliticaA05"
+	when
+		>variablesNegocio : VariablesNegocio( )
+		>cliente : Cliente( actividadEconomica == "DEPENDIENTE" && eval( ((cliente.getValorEntrada()/cliente.getValorFacturable())>0.65 && (cliente.getMontoFinanciado()/cliente.getTotalIngresos())>8) ||(cliente.getMontoFinanciado()/cliente.getTotalIngresos()) > 6 ))
+	then
+		>variablesNegocio.getCodigosPoliticas().add("5");
+end

@@ -1,0 +1,15 @@
+package com.relative.QuskiAutomotriz;
+
+import java.lang.Number;
+import com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente;
+import com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio;
+
+rule "PoliticaA11"
+	dialect "mvel"
+	ruleflow-group "PoliticaA11"
+	when
+		>variablesNegocio : VariablesNegocio( )
+		>cliente : Cliente( demandaJudicial > 0.0 )
+	then
+		>variablesNegocio.getCodigosPoliticas().add("11");
+end

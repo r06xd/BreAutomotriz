@@ -1,0 +1,1022 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_JTzYcNd5Eem3gK-9mmklmQ" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd http://www.omg.org/spec/DD/20100524/DC DC.xsd http://www.omg.org/spec/DD/20100524/DI DI.xsd " exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
+  <bpmn2:itemDefinition id="_clienteItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente"/>
+  <bpmn2:itemDefinition id="_variablesNegocioItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio"/>
+  <bpmn2:itemDefinition id="__F71CF836-5A57-4932-8972-806D3D04587B_namespaceInputXItem" structureRef="java.lang.String"/>
+  <bpmn2:itemDefinition id="__F71CF836-5A57-4932-8972-806D3D04587B_modelInputXItem" structureRef="java.lang.String"/>
+  <bpmn2:itemDefinition id="__F71CF836-5A57-4932-8972-806D3D04587B_decisionInputXItem" structureRef="java.lang.String"/>
+  <bpmn2:itemDefinition id="__F71CF836-5A57-4932-8972-806D3D04587B_clienteInputXItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente"/>
+  <bpmn2:itemDefinition id="__F71CF836-5A57-4932-8972-806D3D04587B_variablesNegocioInputXItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio"/>
+  <bpmn2:itemDefinition id="__F71CF836-5A57-4932-8972-806D3D04587B_clienteOutputXItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente"/>
+  <bpmn2:itemDefinition id="__F71CF836-5A57-4932-8972-806D3D04587B_variablesNegocioOutputXItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio"/>
+  <bpmn2:itemDefinition id="__FD9C1A41-D293-4D5E-8BDA-77812E72AC2A_namespaceInputXItem" structureRef="java.lang.String"/>
+  <bpmn2:itemDefinition id="__FD9C1A41-D293-4D5E-8BDA-77812E72AC2A_modelInputXItem" structureRef="java.lang.String"/>
+  <bpmn2:itemDefinition id="__FD9C1A41-D293-4D5E-8BDA-77812E72AC2A_decisionInputXItem" structureRef="java.lang.String"/>
+  <bpmn2:itemDefinition id="__FD9C1A41-D293-4D5E-8BDA-77812E72AC2A_clienteInputXItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente"/>
+  <bpmn2:itemDefinition id="__FD9C1A41-D293-4D5E-8BDA-77812E72AC2A_variablesNegocioInputXItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio"/>
+  <bpmn2:itemDefinition id="__FD9C1A41-D293-4D5E-8BDA-77812E72AC2A_clienteOutputXItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente"/>
+  <bpmn2:itemDefinition id="__FD9C1A41-D293-4D5E-8BDA-77812E72AC2A_variablesNegocioOutputXItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio"/>
+  <bpmn2:itemDefinition id="__D30CD2C0-D352-450F-B8A4-8AA3841AD360_namespaceInputXItem" structureRef="java.lang.String"/>
+  <bpmn2:itemDefinition id="__D30CD2C0-D352-450F-B8A4-8AA3841AD360_modelInputXItem" structureRef="java.lang.String"/>
+  <bpmn2:itemDefinition id="__D30CD2C0-D352-450F-B8A4-8AA3841AD360_decisionInputXItem" structureRef="java.lang.String"/>
+  <bpmn2:itemDefinition id="__D30CD2C0-D352-450F-B8A4-8AA3841AD360_clienteInputXItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente"/>
+  <bpmn2:itemDefinition id="__D30CD2C0-D352-450F-B8A4-8AA3841AD360_variablesNegocioInputXItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio"/>
+  <bpmn2:itemDefinition id="__D30CD2C0-D352-450F-B8A4-8AA3841AD360_clienteOutputXItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente"/>
+  <bpmn2:itemDefinition id="__D30CD2C0-D352-450F-B8A4-8AA3841AD360_variablesNegocioOutputXItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio"/>
+  <bpmn2:itemDefinition id="__09D634CC-4AD3-4532-8EBD-D01AD6AD88F8_namespaceInputXItem" structureRef="java.lang.String"/>
+  <bpmn2:itemDefinition id="__09D634CC-4AD3-4532-8EBD-D01AD6AD88F8_modelInputXItem" structureRef="java.lang.String"/>
+  <bpmn2:itemDefinition id="__09D634CC-4AD3-4532-8EBD-D01AD6AD88F8_decisionInputXItem" structureRef="java.lang.String"/>
+  <bpmn2:itemDefinition id="__09D634CC-4AD3-4532-8EBD-D01AD6AD88F8_clienteInputXItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente"/>
+  <bpmn2:itemDefinition id="__09D634CC-4AD3-4532-8EBD-D01AD6AD88F8_variablesNegocioInputXItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio"/>
+  <bpmn2:itemDefinition id="__09D634CC-4AD3-4532-8EBD-D01AD6AD88F8_clienteOutputXItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente"/>
+  <bpmn2:itemDefinition id="__09D634CC-4AD3-4532-8EBD-D01AD6AD88F8_variablesNegocioOutputXItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio"/>
+  <bpmn2:itemDefinition id="__206E5C81-8DD0-47C7-86F3-6380978B2608_namespaceInputXItem" structureRef="java.lang.String"/>
+  <bpmn2:itemDefinition id="__206E5C81-8DD0-47C7-86F3-6380978B2608_modelInputXItem" structureRef="java.lang.String"/>
+  <bpmn2:itemDefinition id="__206E5C81-8DD0-47C7-86F3-6380978B2608_decisionInputXItem" structureRef="java.lang.String"/>
+  <bpmn2:itemDefinition id="__206E5C81-8DD0-47C7-86F3-6380978B2608_clienteInputXItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente"/>
+  <bpmn2:itemDefinition id="__206E5C81-8DD0-47C7-86F3-6380978B2608_variablesNegocioInputXItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio"/>
+  <bpmn2:itemDefinition id="__206E5C81-8DD0-47C7-86F3-6380978B2608_clienteOutputXItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente"/>
+  <bpmn2:itemDefinition id="__206E5C81-8DD0-47C7-86F3-6380978B2608_variablesNegocioOutputXItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio"/>
+  <bpmn2:itemDefinition id="__45AAF86B-38E6-4D73-AC4C-DE86DD1EEE3B_namespaceInputXItem" structureRef="java.lang.String"/>
+  <bpmn2:itemDefinition id="__45AAF86B-38E6-4D73-AC4C-DE86DD1EEE3B_modelInputXItem" structureRef="java.lang.String"/>
+  <bpmn2:itemDefinition id="__45AAF86B-38E6-4D73-AC4C-DE86DD1EEE3B_decisionInputXItem" structureRef="java.lang.String"/>
+  <bpmn2:itemDefinition id="__45AAF86B-38E6-4D73-AC4C-DE86DD1EEE3B_clienteInputXItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente"/>
+  <bpmn2:itemDefinition id="__45AAF86B-38E6-4D73-AC4C-DE86DD1EEE3B_variablesNegocioInputXItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio"/>
+  <bpmn2:itemDefinition id="__45AAF86B-38E6-4D73-AC4C-DE86DD1EEE3B_clienteOutputXItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente"/>
+  <bpmn2:itemDefinition id="__45AAF86B-38E6-4D73-AC4C-DE86DD1EEE3B_variablesNegocioOutputXItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio"/>
+  <bpmn2:itemDefinition id="__67E4E040-D542-487C-9457-872E38CF2369_namespaceInputXItem" structureRef="java.lang.String"/>
+  <bpmn2:itemDefinition id="__67E4E040-D542-487C-9457-872E38CF2369_modelInputXItem" structureRef="java.lang.String"/>
+  <bpmn2:itemDefinition id="__67E4E040-D542-487C-9457-872E38CF2369_decisionInputXItem" structureRef="java.lang.String"/>
+  <bpmn2:itemDefinition id="__67E4E040-D542-487C-9457-872E38CF2369_clienteInputXItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente"/>
+  <bpmn2:itemDefinition id="__67E4E040-D542-487C-9457-872E38CF2369_variablesNegocioInputXItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio"/>
+  <bpmn2:itemDefinition id="__67E4E040-D542-487C-9457-872E38CF2369_clienteOutputXItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente"/>
+  <bpmn2:itemDefinition id="__67E4E040-D542-487C-9457-872E38CF2369_variablesNegocioOutputXItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio"/>
+  <bpmn2:itemDefinition id="__0B2D8EB6-5A2F-4718-BE60-04FAE7868058_namespaceInputXItem" structureRef="java.lang.String"/>
+  <bpmn2:itemDefinition id="__0B2D8EB6-5A2F-4718-BE60-04FAE7868058_modelInputXItem" structureRef="java.lang.String"/>
+  <bpmn2:itemDefinition id="__0B2D8EB6-5A2F-4718-BE60-04FAE7868058_decisionInputXItem" structureRef="java.lang.String"/>
+  <bpmn2:itemDefinition id="__0B2D8EB6-5A2F-4718-BE60-04FAE7868058_clienteInputXItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente"/>
+  <bpmn2:itemDefinition id="__0B2D8EB6-5A2F-4718-BE60-04FAE7868058_variablesNegocioInputXItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio"/>
+  <bpmn2:itemDefinition id="__0B2D8EB6-5A2F-4718-BE60-04FAE7868058_clienteOutputXItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente"/>
+  <bpmn2:itemDefinition id="__0B2D8EB6-5A2F-4718-BE60-04FAE7868058_variablesNegocioOutputXItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio"/>
+  <bpmn2:itemDefinition id="__96F2A8A3-7B4A-4B4F-AAEF-F62C1FB5FE75_namespaceInputXItem" structureRef="java.lang.String"/>
+  <bpmn2:itemDefinition id="__96F2A8A3-7B4A-4B4F-AAEF-F62C1FB5FE75_modelInputXItem" structureRef="java.lang.String"/>
+  <bpmn2:itemDefinition id="__96F2A8A3-7B4A-4B4F-AAEF-F62C1FB5FE75_decisionInputXItem" structureRef="java.lang.String"/>
+  <bpmn2:itemDefinition id="__96F2A8A3-7B4A-4B4F-AAEF-F62C1FB5FE75_clienteInputXItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente"/>
+  <bpmn2:itemDefinition id="__96F2A8A3-7B4A-4B4F-AAEF-F62C1FB5FE75_variablesNegocioInputXItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio"/>
+  <bpmn2:itemDefinition id="__96F2A8A3-7B4A-4B4F-AAEF-F62C1FB5FE75_clienteOutputXItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente"/>
+  <bpmn2:itemDefinition id="__96F2A8A3-7B4A-4B4F-AAEF-F62C1FB5FE75_variablesNegocioOutputXItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio"/>
+  <bpmn2:itemDefinition id="__36011396-AE9E-44CE-A953-FAABEAEC5D89_namespaceInputXItem" structureRef="java.lang.String"/>
+  <bpmn2:itemDefinition id="__36011396-AE9E-44CE-A953-FAABEAEC5D89_modelInputXItem" structureRef="java.lang.String"/>
+  <bpmn2:itemDefinition id="__36011396-AE9E-44CE-A953-FAABEAEC5D89_decisionInputXItem" structureRef="java.lang.String"/>
+  <bpmn2:itemDefinition id="__36011396-AE9E-44CE-A953-FAABEAEC5D89_clienteInputXItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente"/>
+  <bpmn2:itemDefinition id="__36011396-AE9E-44CE-A953-FAABEAEC5D89_variablesNegocioInputXItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio"/>
+  <bpmn2:itemDefinition id="__36011396-AE9E-44CE-A953-FAABEAEC5D89_clienteOutputXItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente"/>
+  <bpmn2:itemDefinition id="__36011396-AE9E-44CE-A953-FAABEAEC5D89_variablesNegocioOutputXItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio"/>
+  <bpmn2:itemDefinition id="__C06E701D-11F0-47B1-865D-917173845761_namespaceInputXItem" structureRef="java.lang.String"/>
+  <bpmn2:itemDefinition id="__C06E701D-11F0-47B1-865D-917173845761_modelInputXItem" structureRef="java.lang.String"/>
+  <bpmn2:itemDefinition id="__C06E701D-11F0-47B1-865D-917173845761_decisionInputXItem" structureRef="java.lang.String"/>
+  <bpmn2:itemDefinition id="__C06E701D-11F0-47B1-865D-917173845761_clienteInputXItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente"/>
+  <bpmn2:itemDefinition id="__C06E701D-11F0-47B1-865D-917173845761_variablesNegocioInputXItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio"/>
+  <bpmn2:itemDefinition id="__C06E701D-11F0-47B1-865D-917173845761_clienteOutputXItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente"/>
+  <bpmn2:itemDefinition id="__C06E701D-11F0-47B1-865D-917173845761_variablesNegocioOutputXItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio"/>
+  <bpmn2:itemDefinition id="__D831150B-7C30-4692-A512-B08E24256063_namespaceInputXItem" structureRef="java.lang.String"/>
+  <bpmn2:itemDefinition id="__D831150B-7C30-4692-A512-B08E24256063_modelInputXItem" structureRef="java.lang.String"/>
+  <bpmn2:itemDefinition id="__D831150B-7C30-4692-A512-B08E24256063_decisionInputXItem" structureRef="java.lang.String"/>
+  <bpmn2:itemDefinition id="__D831150B-7C30-4692-A512-B08E24256063_clienteInputXItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente"/>
+  <bpmn2:itemDefinition id="__D831150B-7C30-4692-A512-B08E24256063_variablesNegocioInputXItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio"/>
+  <bpmn2:itemDefinition id="__D831150B-7C30-4692-A512-B08E24256063_clienteOutputXItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente"/>
+  <bpmn2:itemDefinition id="__D831150B-7C30-4692-A512-B08E24256063_variablesNegocioOutputXItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio"/>
+  <bpmn2:itemDefinition id="__C2663350-EDCB-4E35-8082-C298093CFCD3_namespaceInputXItem" structureRef="java.lang.String"/>
+  <bpmn2:itemDefinition id="__C2663350-EDCB-4E35-8082-C298093CFCD3_modelInputXItem" structureRef="java.lang.String"/>
+  <bpmn2:itemDefinition id="__C2663350-EDCB-4E35-8082-C298093CFCD3_decisionInputXItem" structureRef="java.lang.String"/>
+  <bpmn2:itemDefinition id="__C2663350-EDCB-4E35-8082-C298093CFCD3_clienteInputXItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente"/>
+  <bpmn2:itemDefinition id="__C2663350-EDCB-4E35-8082-C298093CFCD3_variablesNegocioInputXItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio"/>
+  <bpmn2:itemDefinition id="__C2663350-EDCB-4E35-8082-C298093CFCD3_clienteOutputXItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente"/>
+  <bpmn2:itemDefinition id="__C2663350-EDCB-4E35-8082-C298093CFCD3_variablesNegocioOutputXItem" structureRef="com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio"/>
+  <bpmn2:process id="QuskiAutomotriz.FlujoPoliticas" drools:packageName="com.relative.QuskiAutomotriz" drools:version="1.0" drools:adHoc="false" name="FlujoPoliticas" isExecutable="true">
+    <bpmn2:property id="cliente" itemSubjectRef="_clienteItem" name="cliente"/>
+    <bpmn2:property id="variablesNegocio" itemSubjectRef="_variablesNegocioItem" name="variablesNegocio"/>
+    <bpmn2:sequenceFlow id="_0F0129E7-4B7D-410E-90E6-5CBA3A89BCB5" sourceRef="_D831150B-7C30-4692-A512-B08E24256063" targetRef="_C06E701D-11F0-47B1-865D-917173845761"/>
+    <bpmn2:sequenceFlow id="_E0649FDE-0E85-4E24-A6AA-A208C24B8769" sourceRef="_C2663350-EDCB-4E35-8082-C298093CFCD3" targetRef="_96F2A8A3-7B4A-4B4F-AAEF-F62C1FB5FE75"/>
+    <bpmn2:sequenceFlow id="_53A38E8F-55C2-4D97-9EBC-917256CAF7BD" sourceRef="_0B2D8EB6-5A2F-4718-BE60-04FAE7868058" targetRef="_36011396-AE9E-44CE-A953-FAABEAEC5D89"/>
+    <bpmn2:sequenceFlow id="_1EC9E370-A67B-4F1B-BDFC-E65CD3AF6BE7" sourceRef="_67E4E040-D542-487C-9457-872E38CF2369" targetRef="_0B2D8EB6-5A2F-4718-BE60-04FAE7868058"/>
+    <bpmn2:sequenceFlow id="_385DD5A2-E1DA-4EE5-80E8-0F2811934D8B" sourceRef="_1D682D22-DC2B-4584-9A71-A6827CBCEF80" targetRef="_45AAF86B-38E6-4D73-AC4C-DE86DD1EEE3B"/>
+    <bpmn2:sequenceFlow id="_C7D0B25D-2DE0-4393-BB80-99694A75F419" sourceRef="_206E5C81-8DD0-47C7-86F3-6380978B2608" targetRef="_EB100301-DFEB-4755-87D3-7C3B85AFB420">
+      <bpmn2:extensionElements>
+        <drools:metaData name="isAutoConnection.source">
+          <drools:metaValue><![CDATA[true]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="_6CE77B36-3677-4F27-B8A8-A1066337452C" sourceRef="_C06E701D-11F0-47B1-865D-917173845761" targetRef="_206E5C81-8DD0-47C7-86F3-6380978B2608"/>
+    <bpmn2:sequenceFlow id="_60DA32D2-ED17-4C97-9260-F31353344AB3" sourceRef="_09D634CC-4AD3-4532-8EBD-D01AD6AD88F8" targetRef="_D831150B-7C30-4692-A512-B08E24256063"/>
+    <bpmn2:sequenceFlow id="_B64C9973-524F-47D1-8F89-CE0F9BBCCC7A" sourceRef="_D30CD2C0-D352-450F-B8A4-8AA3841AD360" targetRef="_C2663350-EDCB-4E35-8082-C298093CFCD3"/>
+    <bpmn2:sequenceFlow id="_BE175AD9-6116-4E2E-9770-9B7C8879A743" sourceRef="_45AAF86B-38E6-4D73-AC4C-DE86DD1EEE3B" targetRef="_D30CD2C0-D352-450F-B8A4-8AA3841AD360">
+      <bpmn2:extensionElements>
+        <drools:metaData name="isAutoConnection.target">
+          <drools:metaValue><![CDATA[true]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+    </bpmn2:sequenceFlow>
+    <bpmn2:sequenceFlow id="_8DCDBDCE-8323-4C98-BBDB-0EA6F4502C90" sourceRef="_FD9C1A41-D293-4D5E-8BDA-77812E72AC2A" targetRef="_67E4E040-D542-487C-9457-872E38CF2369"/>
+    <bpmn2:sequenceFlow id="_5CA600DA-BB3C-4F3B-80EE-217B9E625402" sourceRef="_96F2A8A3-7B4A-4B4F-AAEF-F62C1FB5FE75" targetRef="_FD9C1A41-D293-4D5E-8BDA-77812E72AC2A"/>
+    <bpmn2:sequenceFlow id="_F259C6CE-E448-4BB0-AC6D-6A57CA48BF28" sourceRef="_F71CF836-5A57-4932-8972-806D3D04587B" targetRef="_09D634CC-4AD3-4532-8EBD-D01AD6AD88F8"/>
+    <bpmn2:sequenceFlow id="_61F3812D-4D5F-4336-9069-E606F70DE128" sourceRef="_36011396-AE9E-44CE-A953-FAABEAEC5D89" targetRef="_F71CF836-5A57-4932-8972-806D3D04587B"/>
+    <bpmn2:businessRuleTask id="_C2663350-EDCB-4E35-8082-C298093CFCD3" drools:ruleFlowGroup="PoliticaA03" name="PoliticaA03Task" implementation="http://www.jboss.org/drools/rule">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[PoliticaA03Task]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>_B64C9973-524F-47D1-8F89-CE0F9BBCCC7A</bpmn2:incoming>
+      <bpmn2:outgoing>_E0649FDE-0E85-4E24-A6AA-A208C24B8769</bpmn2:outgoing>
+      <bpmn2:ioSpecification id="_JTzYcdd5Eem3gK-9mmklmQ">
+        <bpmn2:dataInput id="_C2663350-EDCB-4E35-8082-C298093CFCD3_clienteInputX" drools:dtype="com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente" itemSubjectRef="__C2663350-EDCB-4E35-8082-C298093CFCD3_clienteInputXItem" name="cliente"/>
+        <bpmn2:dataInput id="_C2663350-EDCB-4E35-8082-C298093CFCD3_variablesNegocioInputX" drools:dtype="com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio" itemSubjectRef="__C2663350-EDCB-4E35-8082-C298093CFCD3_variablesNegocioInputXItem" name="variablesNegocio"/>
+        <bpmn2:dataOutput id="_C2663350-EDCB-4E35-8082-C298093CFCD3_clienteOutputX" drools:dtype="com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente" itemSubjectRef="__C2663350-EDCB-4E35-8082-C298093CFCD3_clienteOutputXItem" name="cliente"/>
+        <bpmn2:dataOutput id="_C2663350-EDCB-4E35-8082-C298093CFCD3_variablesNegocioOutputX" drools:dtype="com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio" itemSubjectRef="__C2663350-EDCB-4E35-8082-C298093CFCD3_variablesNegocioOutputXItem" name="variablesNegocio"/>
+        <bpmn2:inputSet id="_JTzYctd5Eem3gK-9mmklmQ">
+          <bpmn2:dataInputRefs>_C2663350-EDCB-4E35-8082-C298093CFCD3_clienteInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_C2663350-EDCB-4E35-8082-C298093CFCD3_variablesNegocioInputX</bpmn2:dataInputRefs>
+        </bpmn2:inputSet>
+        <bpmn2:outputSet id="_JTz_gNd5Eem3gK-9mmklmQ">
+          <bpmn2:dataOutputRefs>_C2663350-EDCB-4E35-8082-C298093CFCD3_clienteOutputX</bpmn2:dataOutputRefs>
+          <bpmn2:dataOutputRefs>_C2663350-EDCB-4E35-8082-C298093CFCD3_variablesNegocioOutputX</bpmn2:dataOutputRefs>
+        </bpmn2:outputSet>
+      </bpmn2:ioSpecification>
+      <bpmn2:dataInputAssociation id="_JTz_gdd5Eem3gK-9mmklmQ">
+        <bpmn2:sourceRef>cliente</bpmn2:sourceRef>
+        <bpmn2:targetRef>_C2663350-EDCB-4E35-8082-C298093CFCD3_clienteInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="_JTz_gtd5Eem3gK-9mmklmQ">
+        <bpmn2:sourceRef>variablesNegocio</bpmn2:sourceRef>
+        <bpmn2:targetRef>_C2663350-EDCB-4E35-8082-C298093CFCD3_variablesNegocioInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataOutputAssociation id="_JTz_g9d5Eem3gK-9mmklmQ">
+        <bpmn2:sourceRef>_C2663350-EDCB-4E35-8082-C298093CFCD3_clienteOutputX</bpmn2:sourceRef>
+        <bpmn2:targetRef>cliente</bpmn2:targetRef>
+      </bpmn2:dataOutputAssociation>
+      <bpmn2:dataOutputAssociation id="_JTz_hNd5Eem3gK-9mmklmQ">
+        <bpmn2:sourceRef>_C2663350-EDCB-4E35-8082-C298093CFCD3_variablesNegocioOutputX</bpmn2:sourceRef>
+        <bpmn2:targetRef>variablesNegocio</bpmn2:targetRef>
+      </bpmn2:dataOutputAssociation>
+    </bpmn2:businessRuleTask>
+    <bpmn2:businessRuleTask id="_D831150B-7C30-4692-A512-B08E24256063" drools:ruleFlowGroup="PoliticaA11" name="PoliticaA11Task" implementation="http://www.jboss.org/drools/rule">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[PoliticaA11Task]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>_60DA32D2-ED17-4C97-9260-F31353344AB3</bpmn2:incoming>
+      <bpmn2:outgoing>_0F0129E7-4B7D-410E-90E6-5CBA3A89BCB5</bpmn2:outgoing>
+      <bpmn2:ioSpecification id="_JTz_hdd5Eem3gK-9mmklmQ">
+        <bpmn2:dataInput id="_D831150B-7C30-4692-A512-B08E24256063_clienteInputX" drools:dtype="com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente" itemSubjectRef="__D831150B-7C30-4692-A512-B08E24256063_clienteInputXItem" name="cliente"/>
+        <bpmn2:dataInput id="_D831150B-7C30-4692-A512-B08E24256063_variablesNegocioInputX" drools:dtype="com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio" itemSubjectRef="__D831150B-7C30-4692-A512-B08E24256063_variablesNegocioInputXItem" name="variablesNegocio"/>
+        <bpmn2:dataOutput id="_D831150B-7C30-4692-A512-B08E24256063_clienteOutputX" drools:dtype="com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente" itemSubjectRef="__D831150B-7C30-4692-A512-B08E24256063_clienteOutputXItem" name="cliente"/>
+        <bpmn2:dataOutput id="_D831150B-7C30-4692-A512-B08E24256063_variablesNegocioOutputX" drools:dtype="com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio" itemSubjectRef="__D831150B-7C30-4692-A512-B08E24256063_variablesNegocioOutputXItem" name="variablesNegocio"/>
+        <bpmn2:inputSet id="_JTz_htd5Eem3gK-9mmklmQ">
+          <bpmn2:dataInputRefs>_D831150B-7C30-4692-A512-B08E24256063_clienteInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_D831150B-7C30-4692-A512-B08E24256063_variablesNegocioInputX</bpmn2:dataInputRefs>
+        </bpmn2:inputSet>
+        <bpmn2:outputSet id="_JTz_h9d5Eem3gK-9mmklmQ">
+          <bpmn2:dataOutputRefs>_D831150B-7C30-4692-A512-B08E24256063_clienteOutputX</bpmn2:dataOutputRefs>
+          <bpmn2:dataOutputRefs>_D831150B-7C30-4692-A512-B08E24256063_variablesNegocioOutputX</bpmn2:dataOutputRefs>
+        </bpmn2:outputSet>
+      </bpmn2:ioSpecification>
+      <bpmn2:dataInputAssociation id="_JTz_iNd5Eem3gK-9mmklmQ">
+        <bpmn2:sourceRef>cliente</bpmn2:sourceRef>
+        <bpmn2:targetRef>_D831150B-7C30-4692-A512-B08E24256063_clienteInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="_JTz_idd5Eem3gK-9mmklmQ">
+        <bpmn2:sourceRef>variablesNegocio</bpmn2:sourceRef>
+        <bpmn2:targetRef>_D831150B-7C30-4692-A512-B08E24256063_variablesNegocioInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataOutputAssociation id="_JTz_itd5Eem3gK-9mmklmQ">
+        <bpmn2:sourceRef>_D831150B-7C30-4692-A512-B08E24256063_clienteOutputX</bpmn2:sourceRef>
+        <bpmn2:targetRef>cliente</bpmn2:targetRef>
+      </bpmn2:dataOutputAssociation>
+      <bpmn2:dataOutputAssociation id="_JTz_i9d5Eem3gK-9mmklmQ">
+        <bpmn2:sourceRef>_D831150B-7C30-4692-A512-B08E24256063_variablesNegocioOutputX</bpmn2:sourceRef>
+        <bpmn2:targetRef>variablesNegocio</bpmn2:targetRef>
+      </bpmn2:dataOutputAssociation>
+    </bpmn2:businessRuleTask>
+    <bpmn2:businessRuleTask id="_C06E701D-11F0-47B1-865D-917173845761" drools:ruleFlowGroup="PoliticaA12" name="PoliticaA12Task" implementation="http://www.jboss.org/drools/rule">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[PoliticaA12Task]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>_0F0129E7-4B7D-410E-90E6-5CBA3A89BCB5</bpmn2:incoming>
+      <bpmn2:outgoing>_6CE77B36-3677-4F27-B8A8-A1066337452C</bpmn2:outgoing>
+      <bpmn2:ioSpecification id="_JTz_jNd5Eem3gK-9mmklmQ">
+        <bpmn2:dataInput id="_C06E701D-11F0-47B1-865D-917173845761_clienteInputX" drools:dtype="com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente" itemSubjectRef="__C06E701D-11F0-47B1-865D-917173845761_clienteInputXItem" name="cliente"/>
+        <bpmn2:dataInput id="_C06E701D-11F0-47B1-865D-917173845761_variablesNegocioInputX" drools:dtype="com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio" itemSubjectRef="__C06E701D-11F0-47B1-865D-917173845761_variablesNegocioInputXItem" name="variablesNegocio"/>
+        <bpmn2:dataOutput id="_C06E701D-11F0-47B1-865D-917173845761_clienteOutputX" drools:dtype="com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente" itemSubjectRef="__C06E701D-11F0-47B1-865D-917173845761_clienteOutputXItem" name="cliente"/>
+        <bpmn2:dataOutput id="_C06E701D-11F0-47B1-865D-917173845761_variablesNegocioOutputX" drools:dtype="com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio" itemSubjectRef="__C06E701D-11F0-47B1-865D-917173845761_variablesNegocioOutputXItem" name="variablesNegocio"/>
+        <bpmn2:inputSet id="_JTz_jdd5Eem3gK-9mmklmQ">
+          <bpmn2:dataInputRefs>_C06E701D-11F0-47B1-865D-917173845761_clienteInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_C06E701D-11F0-47B1-865D-917173845761_variablesNegocioInputX</bpmn2:dataInputRefs>
+        </bpmn2:inputSet>
+        <bpmn2:outputSet id="_JTz_jtd5Eem3gK-9mmklmQ">
+          <bpmn2:dataOutputRefs>_C06E701D-11F0-47B1-865D-917173845761_clienteOutputX</bpmn2:dataOutputRefs>
+          <bpmn2:dataOutputRefs>_C06E701D-11F0-47B1-865D-917173845761_variablesNegocioOutputX</bpmn2:dataOutputRefs>
+        </bpmn2:outputSet>
+      </bpmn2:ioSpecification>
+      <bpmn2:dataInputAssociation id="_JTz_j9d5Eem3gK-9mmklmQ">
+        <bpmn2:sourceRef>cliente</bpmn2:sourceRef>
+        <bpmn2:targetRef>_C06E701D-11F0-47B1-865D-917173845761_clienteInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="_JTz_kNd5Eem3gK-9mmklmQ">
+        <bpmn2:sourceRef>variablesNegocio</bpmn2:sourceRef>
+        <bpmn2:targetRef>_C06E701D-11F0-47B1-865D-917173845761_variablesNegocioInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataOutputAssociation id="_JTz_kdd5Eem3gK-9mmklmQ">
+        <bpmn2:sourceRef>_C06E701D-11F0-47B1-865D-917173845761_clienteOutputX</bpmn2:sourceRef>
+        <bpmn2:targetRef>cliente</bpmn2:targetRef>
+      </bpmn2:dataOutputAssociation>
+      <bpmn2:dataOutputAssociation id="_JTz_ktd5Eem3gK-9mmklmQ">
+        <bpmn2:sourceRef>_C06E701D-11F0-47B1-865D-917173845761_variablesNegocioOutputX</bpmn2:sourceRef>
+        <bpmn2:targetRef>variablesNegocio</bpmn2:targetRef>
+      </bpmn2:dataOutputAssociation>
+    </bpmn2:businessRuleTask>
+    <bpmn2:businessRuleTask id="_36011396-AE9E-44CE-A953-FAABEAEC5D89" drools:ruleFlowGroup="PoliticaA08" name="PoliticaA08Task" implementation="http://www.jboss.org/drools/rule">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[PoliticaA08Task]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>_53A38E8F-55C2-4D97-9EBC-917256CAF7BD</bpmn2:incoming>
+      <bpmn2:outgoing>_61F3812D-4D5F-4336-9069-E606F70DE128</bpmn2:outgoing>
+      <bpmn2:ioSpecification id="_JTz_k9d5Eem3gK-9mmklmQ">
+        <bpmn2:dataInput id="_36011396-AE9E-44CE-A953-FAABEAEC5D89_clienteInputX" drools:dtype="com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente" itemSubjectRef="__36011396-AE9E-44CE-A953-FAABEAEC5D89_clienteInputXItem" name="cliente"/>
+        <bpmn2:dataInput id="_36011396-AE9E-44CE-A953-FAABEAEC5D89_variablesNegocioInputX" drools:dtype="com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio" itemSubjectRef="__36011396-AE9E-44CE-A953-FAABEAEC5D89_variablesNegocioInputXItem" name="variablesNegocio"/>
+        <bpmn2:dataOutput id="_36011396-AE9E-44CE-A953-FAABEAEC5D89_clienteOutputX" drools:dtype="com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente" itemSubjectRef="__36011396-AE9E-44CE-A953-FAABEAEC5D89_clienteOutputXItem" name="cliente"/>
+        <bpmn2:dataOutput id="_36011396-AE9E-44CE-A953-FAABEAEC5D89_variablesNegocioOutputX" drools:dtype="com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio" itemSubjectRef="__36011396-AE9E-44CE-A953-FAABEAEC5D89_variablesNegocioOutputXItem" name="variablesNegocio"/>
+        <bpmn2:inputSet id="_JTz_lNd5Eem3gK-9mmklmQ">
+          <bpmn2:dataInputRefs>_36011396-AE9E-44CE-A953-FAABEAEC5D89_clienteInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_36011396-AE9E-44CE-A953-FAABEAEC5D89_variablesNegocioInputX</bpmn2:dataInputRefs>
+        </bpmn2:inputSet>
+        <bpmn2:outputSet id="_JTz_ldd5Eem3gK-9mmklmQ">
+          <bpmn2:dataOutputRefs>_36011396-AE9E-44CE-A953-FAABEAEC5D89_clienteOutputX</bpmn2:dataOutputRefs>
+          <bpmn2:dataOutputRefs>_36011396-AE9E-44CE-A953-FAABEAEC5D89_variablesNegocioOutputX</bpmn2:dataOutputRefs>
+        </bpmn2:outputSet>
+      </bpmn2:ioSpecification>
+      <bpmn2:dataInputAssociation id="_JTz_ltd5Eem3gK-9mmklmQ">
+        <bpmn2:sourceRef>cliente</bpmn2:sourceRef>
+        <bpmn2:targetRef>_36011396-AE9E-44CE-A953-FAABEAEC5D89_clienteInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="_JTz_l9d5Eem3gK-9mmklmQ">
+        <bpmn2:sourceRef>variablesNegocio</bpmn2:sourceRef>
+        <bpmn2:targetRef>_36011396-AE9E-44CE-A953-FAABEAEC5D89_variablesNegocioInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataOutputAssociation id="_JTz_mNd5Eem3gK-9mmklmQ">
+        <bpmn2:sourceRef>_36011396-AE9E-44CE-A953-FAABEAEC5D89_clienteOutputX</bpmn2:sourceRef>
+        <bpmn2:targetRef>cliente</bpmn2:targetRef>
+      </bpmn2:dataOutputAssociation>
+      <bpmn2:dataOutputAssociation id="_JTz_mdd5Eem3gK-9mmklmQ">
+        <bpmn2:sourceRef>_36011396-AE9E-44CE-A953-FAABEAEC5D89_variablesNegocioOutputX</bpmn2:sourceRef>
+        <bpmn2:targetRef>variablesNegocio</bpmn2:targetRef>
+      </bpmn2:dataOutputAssociation>
+    </bpmn2:businessRuleTask>
+    <bpmn2:endEvent id="_EB100301-DFEB-4755-87D3-7C3B85AFB420">
+      <bpmn2:incoming>_C7D0B25D-2DE0-4393-BB80-99694A75F419</bpmn2:incoming>
+    </bpmn2:endEvent>
+    <bpmn2:startEvent id="_1D682D22-DC2B-4584-9A71-A6827CBCEF80">
+      <bpmn2:outgoing>_385DD5A2-E1DA-4EE5-80E8-0F2811934D8B</bpmn2:outgoing>
+    </bpmn2:startEvent>
+    <bpmn2:businessRuleTask id="_96F2A8A3-7B4A-4B4F-AAEF-F62C1FB5FE75" drools:ruleFlowGroup="PoliticaA04" name="PoliticaA04Task" implementation="http://www.jboss.org/drools/rule">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[PoliticaA04Task]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>_E0649FDE-0E85-4E24-A6AA-A208C24B8769</bpmn2:incoming>
+      <bpmn2:outgoing>_5CA600DA-BB3C-4F3B-80EE-217B9E625402</bpmn2:outgoing>
+      <bpmn2:ioSpecification id="_JTz_mtd5Eem3gK-9mmklmQ">
+        <bpmn2:dataInput id="_96F2A8A3-7B4A-4B4F-AAEF-F62C1FB5FE75_clienteInputX" drools:dtype="com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente" itemSubjectRef="__96F2A8A3-7B4A-4B4F-AAEF-F62C1FB5FE75_clienteInputXItem" name="cliente"/>
+        <bpmn2:dataInput id="_96F2A8A3-7B4A-4B4F-AAEF-F62C1FB5FE75_variablesNegocioInputX" drools:dtype="com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio" itemSubjectRef="__96F2A8A3-7B4A-4B4F-AAEF-F62C1FB5FE75_variablesNegocioInputXItem" name="variablesNegocio"/>
+        <bpmn2:dataOutput id="_96F2A8A3-7B4A-4B4F-AAEF-F62C1FB5FE75_clienteOutputX" drools:dtype="com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente" itemSubjectRef="__96F2A8A3-7B4A-4B4F-AAEF-F62C1FB5FE75_clienteOutputXItem" name="cliente"/>
+        <bpmn2:dataOutput id="_96F2A8A3-7B4A-4B4F-AAEF-F62C1FB5FE75_variablesNegocioOutputX" drools:dtype="com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio" itemSubjectRef="__96F2A8A3-7B4A-4B4F-AAEF-F62C1FB5FE75_variablesNegocioOutputXItem" name="variablesNegocio"/>
+        <bpmn2:inputSet id="_JTz_m9d5Eem3gK-9mmklmQ">
+          <bpmn2:dataInputRefs>_96F2A8A3-7B4A-4B4F-AAEF-F62C1FB5FE75_clienteInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_96F2A8A3-7B4A-4B4F-AAEF-F62C1FB5FE75_variablesNegocioInputX</bpmn2:dataInputRefs>
+        </bpmn2:inputSet>
+        <bpmn2:outputSet id="_JTz_nNd5Eem3gK-9mmklmQ">
+          <bpmn2:dataOutputRefs>_96F2A8A3-7B4A-4B4F-AAEF-F62C1FB5FE75_clienteOutputX</bpmn2:dataOutputRefs>
+          <bpmn2:dataOutputRefs>_96F2A8A3-7B4A-4B4F-AAEF-F62C1FB5FE75_variablesNegocioOutputX</bpmn2:dataOutputRefs>
+        </bpmn2:outputSet>
+      </bpmn2:ioSpecification>
+      <bpmn2:dataInputAssociation id="_JTz_ndd5Eem3gK-9mmklmQ">
+        <bpmn2:sourceRef>cliente</bpmn2:sourceRef>
+        <bpmn2:targetRef>_96F2A8A3-7B4A-4B4F-AAEF-F62C1FB5FE75_clienteInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="_JTz_ntd5Eem3gK-9mmklmQ">
+        <bpmn2:sourceRef>variablesNegocio</bpmn2:sourceRef>
+        <bpmn2:targetRef>_96F2A8A3-7B4A-4B4F-AAEF-F62C1FB5FE75_variablesNegocioInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataOutputAssociation id="_JTz_n9d5Eem3gK-9mmklmQ">
+        <bpmn2:sourceRef>_96F2A8A3-7B4A-4B4F-AAEF-F62C1FB5FE75_clienteOutputX</bpmn2:sourceRef>
+        <bpmn2:targetRef>cliente</bpmn2:targetRef>
+      </bpmn2:dataOutputAssociation>
+      <bpmn2:dataOutputAssociation id="_JTz_oNd5Eem3gK-9mmklmQ">
+        <bpmn2:sourceRef>_96F2A8A3-7B4A-4B4F-AAEF-F62C1FB5FE75_variablesNegocioOutputX</bpmn2:sourceRef>
+        <bpmn2:targetRef>variablesNegocio</bpmn2:targetRef>
+      </bpmn2:dataOutputAssociation>
+    </bpmn2:businessRuleTask>
+    <bpmn2:businessRuleTask id="_0B2D8EB6-5A2F-4718-BE60-04FAE7868058" drools:ruleFlowGroup="PoliticaA07" name="PoliticaA07Task" implementation="http://www.jboss.org/drools/rule">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[PoliticaA07Task]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>_1EC9E370-A67B-4F1B-BDFC-E65CD3AF6BE7</bpmn2:incoming>
+      <bpmn2:outgoing>_53A38E8F-55C2-4D97-9EBC-917256CAF7BD</bpmn2:outgoing>
+      <bpmn2:ioSpecification id="_JTz_odd5Eem3gK-9mmklmQ">
+        <bpmn2:dataInput id="_0B2D8EB6-5A2F-4718-BE60-04FAE7868058_clienteInputX" drools:dtype="com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente" itemSubjectRef="__0B2D8EB6-5A2F-4718-BE60-04FAE7868058_clienteInputXItem" name="cliente"/>
+        <bpmn2:dataInput id="_0B2D8EB6-5A2F-4718-BE60-04FAE7868058_variablesNegocioInputX" drools:dtype="com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio" itemSubjectRef="__0B2D8EB6-5A2F-4718-BE60-04FAE7868058_variablesNegocioInputXItem" name="variablesNegocio"/>
+        <bpmn2:dataOutput id="_0B2D8EB6-5A2F-4718-BE60-04FAE7868058_clienteOutputX" drools:dtype="com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente" itemSubjectRef="__0B2D8EB6-5A2F-4718-BE60-04FAE7868058_clienteOutputXItem" name="cliente"/>
+        <bpmn2:dataOutput id="_0B2D8EB6-5A2F-4718-BE60-04FAE7868058_variablesNegocioOutputX" drools:dtype="com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio" itemSubjectRef="__0B2D8EB6-5A2F-4718-BE60-04FAE7868058_variablesNegocioOutputXItem" name="variablesNegocio"/>
+        <bpmn2:inputSet id="_JTz_otd5Eem3gK-9mmklmQ">
+          <bpmn2:dataInputRefs>_0B2D8EB6-5A2F-4718-BE60-04FAE7868058_clienteInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_0B2D8EB6-5A2F-4718-BE60-04FAE7868058_variablesNegocioInputX</bpmn2:dataInputRefs>
+        </bpmn2:inputSet>
+        <bpmn2:outputSet id="_JTz_o9d5Eem3gK-9mmklmQ">
+          <bpmn2:dataOutputRefs>_0B2D8EB6-5A2F-4718-BE60-04FAE7868058_clienteOutputX</bpmn2:dataOutputRefs>
+          <bpmn2:dataOutputRefs>_0B2D8EB6-5A2F-4718-BE60-04FAE7868058_variablesNegocioOutputX</bpmn2:dataOutputRefs>
+        </bpmn2:outputSet>
+      </bpmn2:ioSpecification>
+      <bpmn2:dataInputAssociation id="_JTz_pNd5Eem3gK-9mmklmQ">
+        <bpmn2:sourceRef>cliente</bpmn2:sourceRef>
+        <bpmn2:targetRef>_0B2D8EB6-5A2F-4718-BE60-04FAE7868058_clienteInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="_JTz_pdd5Eem3gK-9mmklmQ">
+        <bpmn2:sourceRef>variablesNegocio</bpmn2:sourceRef>
+        <bpmn2:targetRef>_0B2D8EB6-5A2F-4718-BE60-04FAE7868058_variablesNegocioInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataOutputAssociation id="_JTz_ptd5Eem3gK-9mmklmQ">
+        <bpmn2:sourceRef>_0B2D8EB6-5A2F-4718-BE60-04FAE7868058_clienteOutputX</bpmn2:sourceRef>
+        <bpmn2:targetRef>cliente</bpmn2:targetRef>
+      </bpmn2:dataOutputAssociation>
+      <bpmn2:dataOutputAssociation id="_JTz_p9d5Eem3gK-9mmklmQ">
+        <bpmn2:sourceRef>_0B2D8EB6-5A2F-4718-BE60-04FAE7868058_variablesNegocioOutputX</bpmn2:sourceRef>
+        <bpmn2:targetRef>variablesNegocio</bpmn2:targetRef>
+      </bpmn2:dataOutputAssociation>
+    </bpmn2:businessRuleTask>
+    <bpmn2:businessRuleTask id="_67E4E040-D542-487C-9457-872E38CF2369" drools:ruleFlowGroup="PoliticaA06" name="PoliticaA06Task" implementation="http://www.jboss.org/drools/rule">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[PoliticaA06Task]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>_8DCDBDCE-8323-4C98-BBDB-0EA6F4502C90</bpmn2:incoming>
+      <bpmn2:outgoing>_1EC9E370-A67B-4F1B-BDFC-E65CD3AF6BE7</bpmn2:outgoing>
+      <bpmn2:ioSpecification id="_JTz_qNd5Eem3gK-9mmklmQ">
+        <bpmn2:dataInput id="_67E4E040-D542-487C-9457-872E38CF2369_clienteInputX" drools:dtype="com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente" itemSubjectRef="__67E4E040-D542-487C-9457-872E38CF2369_clienteInputXItem" name="cliente"/>
+        <bpmn2:dataInput id="_67E4E040-D542-487C-9457-872E38CF2369_variablesNegocioInputX" drools:dtype="com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio" itemSubjectRef="__67E4E040-D542-487C-9457-872E38CF2369_variablesNegocioInputXItem" name="variablesNegocio"/>
+        <bpmn2:dataOutput id="_67E4E040-D542-487C-9457-872E38CF2369_clienteOutputX" drools:dtype="com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente" itemSubjectRef="__67E4E040-D542-487C-9457-872E38CF2369_clienteOutputXItem" name="cliente"/>
+        <bpmn2:dataOutput id="_67E4E040-D542-487C-9457-872E38CF2369_variablesNegocioOutputX" drools:dtype="com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio" itemSubjectRef="__67E4E040-D542-487C-9457-872E38CF2369_variablesNegocioOutputXItem" name="variablesNegocio"/>
+        <bpmn2:inputSet id="_JTz_qdd5Eem3gK-9mmklmQ">
+          <bpmn2:dataInputRefs>_67E4E040-D542-487C-9457-872E38CF2369_clienteInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_67E4E040-D542-487C-9457-872E38CF2369_variablesNegocioInputX</bpmn2:dataInputRefs>
+        </bpmn2:inputSet>
+        <bpmn2:outputSet id="_JTz_qtd5Eem3gK-9mmklmQ">
+          <bpmn2:dataOutputRefs>_67E4E040-D542-487C-9457-872E38CF2369_clienteOutputX</bpmn2:dataOutputRefs>
+          <bpmn2:dataOutputRefs>_67E4E040-D542-487C-9457-872E38CF2369_variablesNegocioOutputX</bpmn2:dataOutputRefs>
+        </bpmn2:outputSet>
+      </bpmn2:ioSpecification>
+      <bpmn2:dataInputAssociation id="_JTz_q9d5Eem3gK-9mmklmQ">
+        <bpmn2:sourceRef>cliente</bpmn2:sourceRef>
+        <bpmn2:targetRef>_67E4E040-D542-487C-9457-872E38CF2369_clienteInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="_JTz_rNd5Eem3gK-9mmklmQ">
+        <bpmn2:sourceRef>variablesNegocio</bpmn2:sourceRef>
+        <bpmn2:targetRef>_67E4E040-D542-487C-9457-872E38CF2369_variablesNegocioInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataOutputAssociation id="_JTz_rdd5Eem3gK-9mmklmQ">
+        <bpmn2:sourceRef>_67E4E040-D542-487C-9457-872E38CF2369_clienteOutputX</bpmn2:sourceRef>
+        <bpmn2:targetRef>cliente</bpmn2:targetRef>
+      </bpmn2:dataOutputAssociation>
+      <bpmn2:dataOutputAssociation id="_JTz_rtd5Eem3gK-9mmklmQ">
+        <bpmn2:sourceRef>_67E4E040-D542-487C-9457-872E38CF2369_variablesNegocioOutputX</bpmn2:sourceRef>
+        <bpmn2:targetRef>variablesNegocio</bpmn2:targetRef>
+      </bpmn2:dataOutputAssociation>
+    </bpmn2:businessRuleTask>
+    <bpmn2:businessRuleTask id="_45AAF86B-38E6-4D73-AC4C-DE86DD1EEE3B" drools:ruleFlowGroup="PoliticaA01" name="PoliticaA01Task" implementation="http://www.jboss.org/drools/rule">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[PoliticaA01Task]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>_385DD5A2-E1DA-4EE5-80E8-0F2811934D8B</bpmn2:incoming>
+      <bpmn2:outgoing>_BE175AD9-6116-4E2E-9770-9B7C8879A743</bpmn2:outgoing>
+      <bpmn2:ioSpecification id="_JTz_r9d5Eem3gK-9mmklmQ">
+        <bpmn2:dataInput id="_45AAF86B-38E6-4D73-AC4C-DE86DD1EEE3B_clienteInputX" drools:dtype="com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente" itemSubjectRef="__45AAF86B-38E6-4D73-AC4C-DE86DD1EEE3B_clienteInputXItem" name="cliente"/>
+        <bpmn2:dataInput id="_45AAF86B-38E6-4D73-AC4C-DE86DD1EEE3B_variablesNegocioInputX" drools:dtype="com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio" itemSubjectRef="__45AAF86B-38E6-4D73-AC4C-DE86DD1EEE3B_variablesNegocioInputXItem" name="variablesNegocio"/>
+        <bpmn2:dataOutput id="_45AAF86B-38E6-4D73-AC4C-DE86DD1EEE3B_clienteOutputX" drools:dtype="com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente" itemSubjectRef="__45AAF86B-38E6-4D73-AC4C-DE86DD1EEE3B_clienteOutputXItem" name="cliente"/>
+        <bpmn2:dataOutput id="_45AAF86B-38E6-4D73-AC4C-DE86DD1EEE3B_variablesNegocioOutputX" drools:dtype="com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio" itemSubjectRef="__45AAF86B-38E6-4D73-AC4C-DE86DD1EEE3B_variablesNegocioOutputXItem" name="variablesNegocio"/>
+        <bpmn2:inputSet id="_JTz_sNd5Eem3gK-9mmklmQ">
+          <bpmn2:dataInputRefs>_45AAF86B-38E6-4D73-AC4C-DE86DD1EEE3B_clienteInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_45AAF86B-38E6-4D73-AC4C-DE86DD1EEE3B_variablesNegocioInputX</bpmn2:dataInputRefs>
+        </bpmn2:inputSet>
+        <bpmn2:outputSet id="_JTz_sdd5Eem3gK-9mmklmQ">
+          <bpmn2:dataOutputRefs>_45AAF86B-38E6-4D73-AC4C-DE86DD1EEE3B_clienteOutputX</bpmn2:dataOutputRefs>
+          <bpmn2:dataOutputRefs>_45AAF86B-38E6-4D73-AC4C-DE86DD1EEE3B_variablesNegocioOutputX</bpmn2:dataOutputRefs>
+        </bpmn2:outputSet>
+      </bpmn2:ioSpecification>
+      <bpmn2:dataInputAssociation id="_JTz_std5Eem3gK-9mmklmQ">
+        <bpmn2:sourceRef>cliente</bpmn2:sourceRef>
+        <bpmn2:targetRef>_45AAF86B-38E6-4D73-AC4C-DE86DD1EEE3B_clienteInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="_JTz_s9d5Eem3gK-9mmklmQ">
+        <bpmn2:sourceRef>variablesNegocio</bpmn2:sourceRef>
+        <bpmn2:targetRef>_45AAF86B-38E6-4D73-AC4C-DE86DD1EEE3B_variablesNegocioInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataOutputAssociation id="_JTz_tNd5Eem3gK-9mmklmQ">
+        <bpmn2:sourceRef>_45AAF86B-38E6-4D73-AC4C-DE86DD1EEE3B_clienteOutputX</bpmn2:sourceRef>
+        <bpmn2:targetRef>cliente</bpmn2:targetRef>
+      </bpmn2:dataOutputAssociation>
+      <bpmn2:dataOutputAssociation id="_JTz_tdd5Eem3gK-9mmklmQ">
+        <bpmn2:sourceRef>_45AAF86B-38E6-4D73-AC4C-DE86DD1EEE3B_variablesNegocioOutputX</bpmn2:sourceRef>
+        <bpmn2:targetRef>variablesNegocio</bpmn2:targetRef>
+      </bpmn2:dataOutputAssociation>
+    </bpmn2:businessRuleTask>
+    <bpmn2:businessRuleTask id="_206E5C81-8DD0-47C7-86F3-6380978B2608" drools:ruleFlowGroup="PoliticaA13" name="PoliticaA13Task" implementation="http://www.jboss.org/drools/rule">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[PoliticaA13Task]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>_6CE77B36-3677-4F27-B8A8-A1066337452C</bpmn2:incoming>
+      <bpmn2:outgoing>_C7D0B25D-2DE0-4393-BB80-99694A75F419</bpmn2:outgoing>
+      <bpmn2:ioSpecification id="_JTz_ttd5Eem3gK-9mmklmQ">
+        <bpmn2:dataInput id="_206E5C81-8DD0-47C7-86F3-6380978B2608_clienteInputX" drools:dtype="com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente" itemSubjectRef="__206E5C81-8DD0-47C7-86F3-6380978B2608_clienteInputXItem" name="cliente"/>
+        <bpmn2:dataInput id="_206E5C81-8DD0-47C7-86F3-6380978B2608_variablesNegocioInputX" drools:dtype="com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio" itemSubjectRef="__206E5C81-8DD0-47C7-86F3-6380978B2608_variablesNegocioInputXItem" name="variablesNegocio"/>
+        <bpmn2:dataOutput id="_206E5C81-8DD0-47C7-86F3-6380978B2608_clienteOutputX" drools:dtype="com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente" itemSubjectRef="__206E5C81-8DD0-47C7-86F3-6380978B2608_clienteOutputXItem" name="cliente"/>
+        <bpmn2:dataOutput id="_206E5C81-8DD0-47C7-86F3-6380978B2608_variablesNegocioOutputX" drools:dtype="com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio" itemSubjectRef="__206E5C81-8DD0-47C7-86F3-6380978B2608_variablesNegocioOutputXItem" name="variablesNegocio"/>
+        <bpmn2:inputSet id="_JTz_t9d5Eem3gK-9mmklmQ">
+          <bpmn2:dataInputRefs>_206E5C81-8DD0-47C7-86F3-6380978B2608_clienteInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_206E5C81-8DD0-47C7-86F3-6380978B2608_variablesNegocioInputX</bpmn2:dataInputRefs>
+        </bpmn2:inputSet>
+        <bpmn2:outputSet id="_JTz_uNd5Eem3gK-9mmklmQ">
+          <bpmn2:dataOutputRefs>_206E5C81-8DD0-47C7-86F3-6380978B2608_clienteOutputX</bpmn2:dataOutputRefs>
+          <bpmn2:dataOutputRefs>_206E5C81-8DD0-47C7-86F3-6380978B2608_variablesNegocioOutputX</bpmn2:dataOutputRefs>
+        </bpmn2:outputSet>
+      </bpmn2:ioSpecification>
+      <bpmn2:dataInputAssociation id="_JTz_udd5Eem3gK-9mmklmQ">
+        <bpmn2:sourceRef>cliente</bpmn2:sourceRef>
+        <bpmn2:targetRef>_206E5C81-8DD0-47C7-86F3-6380978B2608_clienteInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="_JTz_utd5Eem3gK-9mmklmQ">
+        <bpmn2:sourceRef>variablesNegocio</bpmn2:sourceRef>
+        <bpmn2:targetRef>_206E5C81-8DD0-47C7-86F3-6380978B2608_variablesNegocioInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataOutputAssociation id="_JTz_u9d5Eem3gK-9mmklmQ">
+        <bpmn2:sourceRef>_206E5C81-8DD0-47C7-86F3-6380978B2608_clienteOutputX</bpmn2:sourceRef>
+        <bpmn2:targetRef>cliente</bpmn2:targetRef>
+      </bpmn2:dataOutputAssociation>
+      <bpmn2:dataOutputAssociation id="_JTz_vNd5Eem3gK-9mmklmQ">
+        <bpmn2:sourceRef>_206E5C81-8DD0-47C7-86F3-6380978B2608_variablesNegocioOutputX</bpmn2:sourceRef>
+        <bpmn2:targetRef>variablesNegocio</bpmn2:targetRef>
+      </bpmn2:dataOutputAssociation>
+    </bpmn2:businessRuleTask>
+    <bpmn2:businessRuleTask id="_09D634CC-4AD3-4532-8EBD-D01AD6AD88F8" drools:ruleFlowGroup="PoliticaA10" name="PoliticaA10Task" implementation="http://www.jboss.org/drools/rule">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[PoliticaA10Task]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>_F259C6CE-E448-4BB0-AC6D-6A57CA48BF28</bpmn2:incoming>
+      <bpmn2:outgoing>_60DA32D2-ED17-4C97-9260-F31353344AB3</bpmn2:outgoing>
+      <bpmn2:ioSpecification id="_JT0mkNd5Eem3gK-9mmklmQ">
+        <bpmn2:dataInput id="_09D634CC-4AD3-4532-8EBD-D01AD6AD88F8_clienteInputX" drools:dtype="com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente" itemSubjectRef="__09D634CC-4AD3-4532-8EBD-D01AD6AD88F8_clienteInputXItem" name="cliente"/>
+        <bpmn2:dataInput id="_09D634CC-4AD3-4532-8EBD-D01AD6AD88F8_variablesNegocioInputX" drools:dtype="com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio" itemSubjectRef="__09D634CC-4AD3-4532-8EBD-D01AD6AD88F8_variablesNegocioInputXItem" name="variablesNegocio"/>
+        <bpmn2:dataOutput id="_09D634CC-4AD3-4532-8EBD-D01AD6AD88F8_clienteOutputX" drools:dtype="com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente" itemSubjectRef="__09D634CC-4AD3-4532-8EBD-D01AD6AD88F8_clienteOutputXItem" name="cliente"/>
+        <bpmn2:dataOutput id="_09D634CC-4AD3-4532-8EBD-D01AD6AD88F8_variablesNegocioOutputX" drools:dtype="com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio" itemSubjectRef="__09D634CC-4AD3-4532-8EBD-D01AD6AD88F8_variablesNegocioOutputXItem" name="variablesNegocio"/>
+        <bpmn2:inputSet id="_JT0mkdd5Eem3gK-9mmklmQ">
+          <bpmn2:dataInputRefs>_09D634CC-4AD3-4532-8EBD-D01AD6AD88F8_clienteInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_09D634CC-4AD3-4532-8EBD-D01AD6AD88F8_variablesNegocioInputX</bpmn2:dataInputRefs>
+        </bpmn2:inputSet>
+        <bpmn2:outputSet id="_JT0mktd5Eem3gK-9mmklmQ">
+          <bpmn2:dataOutputRefs>_09D634CC-4AD3-4532-8EBD-D01AD6AD88F8_clienteOutputX</bpmn2:dataOutputRefs>
+          <bpmn2:dataOutputRefs>_09D634CC-4AD3-4532-8EBD-D01AD6AD88F8_variablesNegocioOutputX</bpmn2:dataOutputRefs>
+        </bpmn2:outputSet>
+      </bpmn2:ioSpecification>
+      <bpmn2:dataInputAssociation id="_JT0mk9d5Eem3gK-9mmklmQ">
+        <bpmn2:sourceRef>cliente</bpmn2:sourceRef>
+        <bpmn2:targetRef>_09D634CC-4AD3-4532-8EBD-D01AD6AD88F8_clienteInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="_JT0mlNd5Eem3gK-9mmklmQ">
+        <bpmn2:sourceRef>variablesNegocio</bpmn2:sourceRef>
+        <bpmn2:targetRef>_09D634CC-4AD3-4532-8EBD-D01AD6AD88F8_variablesNegocioInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataOutputAssociation id="_JT0mldd5Eem3gK-9mmklmQ">
+        <bpmn2:sourceRef>_09D634CC-4AD3-4532-8EBD-D01AD6AD88F8_clienteOutputX</bpmn2:sourceRef>
+        <bpmn2:targetRef>cliente</bpmn2:targetRef>
+      </bpmn2:dataOutputAssociation>
+      <bpmn2:dataOutputAssociation id="_JT0mltd5Eem3gK-9mmklmQ">
+        <bpmn2:sourceRef>_09D634CC-4AD3-4532-8EBD-D01AD6AD88F8_variablesNegocioOutputX</bpmn2:sourceRef>
+        <bpmn2:targetRef>variablesNegocio</bpmn2:targetRef>
+      </bpmn2:dataOutputAssociation>
+    </bpmn2:businessRuleTask>
+    <bpmn2:businessRuleTask id="_D30CD2C0-D352-450F-B8A4-8AA3841AD360" drools:ruleFlowGroup="PoliticaA02" name="PoliticaA02Task" implementation="http://www.jboss.org/drools/rule">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[PoliticaA02Task]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>_BE175AD9-6116-4E2E-9770-9B7C8879A743</bpmn2:incoming>
+      <bpmn2:outgoing>_B64C9973-524F-47D1-8F89-CE0F9BBCCC7A</bpmn2:outgoing>
+      <bpmn2:ioSpecification id="_JT0ml9d5Eem3gK-9mmklmQ">
+        <bpmn2:dataInput id="_D30CD2C0-D352-450F-B8A4-8AA3841AD360_clienteInputX" drools:dtype="com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente" itemSubjectRef="__D30CD2C0-D352-450F-B8A4-8AA3841AD360_clienteInputXItem" name="cliente"/>
+        <bpmn2:dataInput id="_D30CD2C0-D352-450F-B8A4-8AA3841AD360_variablesNegocioInputX" drools:dtype="com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio" itemSubjectRef="__D30CD2C0-D352-450F-B8A4-8AA3841AD360_variablesNegocioInputXItem" name="variablesNegocio"/>
+        <bpmn2:dataOutput id="_D30CD2C0-D352-450F-B8A4-8AA3841AD360_clienteOutputX" drools:dtype="com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente" itemSubjectRef="__D30CD2C0-D352-450F-B8A4-8AA3841AD360_clienteOutputXItem" name="cliente"/>
+        <bpmn2:dataOutput id="_D30CD2C0-D352-450F-B8A4-8AA3841AD360_variablesNegocioOutputX" drools:dtype="com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio" itemSubjectRef="__D30CD2C0-D352-450F-B8A4-8AA3841AD360_variablesNegocioOutputXItem" name="variablesNegocio"/>
+        <bpmn2:inputSet id="_JT0mmNd5Eem3gK-9mmklmQ">
+          <bpmn2:dataInputRefs>_D30CD2C0-D352-450F-B8A4-8AA3841AD360_clienteInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_D30CD2C0-D352-450F-B8A4-8AA3841AD360_variablesNegocioInputX</bpmn2:dataInputRefs>
+        </bpmn2:inputSet>
+        <bpmn2:outputSet id="_JT0mmdd5Eem3gK-9mmklmQ">
+          <bpmn2:dataOutputRefs>_D30CD2C0-D352-450F-B8A4-8AA3841AD360_clienteOutputX</bpmn2:dataOutputRefs>
+          <bpmn2:dataOutputRefs>_D30CD2C0-D352-450F-B8A4-8AA3841AD360_variablesNegocioOutputX</bpmn2:dataOutputRefs>
+        </bpmn2:outputSet>
+      </bpmn2:ioSpecification>
+      <bpmn2:dataInputAssociation id="_JT0mmtd5Eem3gK-9mmklmQ">
+        <bpmn2:sourceRef>cliente</bpmn2:sourceRef>
+        <bpmn2:targetRef>_D30CD2C0-D352-450F-B8A4-8AA3841AD360_clienteInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="_JT0mm9d5Eem3gK-9mmklmQ">
+        <bpmn2:sourceRef>variablesNegocio</bpmn2:sourceRef>
+        <bpmn2:targetRef>_D30CD2C0-D352-450F-B8A4-8AA3841AD360_variablesNegocioInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataOutputAssociation id="_JT0mnNd5Eem3gK-9mmklmQ">
+        <bpmn2:sourceRef>_D30CD2C0-D352-450F-B8A4-8AA3841AD360_clienteOutputX</bpmn2:sourceRef>
+        <bpmn2:targetRef>cliente</bpmn2:targetRef>
+      </bpmn2:dataOutputAssociation>
+      <bpmn2:dataOutputAssociation id="_JT0mndd5Eem3gK-9mmklmQ">
+        <bpmn2:sourceRef>_D30CD2C0-D352-450F-B8A4-8AA3841AD360_variablesNegocioOutputX</bpmn2:sourceRef>
+        <bpmn2:targetRef>variablesNegocio</bpmn2:targetRef>
+      </bpmn2:dataOutputAssociation>
+    </bpmn2:businessRuleTask>
+    <bpmn2:businessRuleTask id="_FD9C1A41-D293-4D5E-8BDA-77812E72AC2A" drools:ruleFlowGroup="PoliticaA05" name="PoliticaA05Task" implementation="http://www.jboss.org/drools/rule">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[PoliticaA05Task]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>_5CA600DA-BB3C-4F3B-80EE-217B9E625402</bpmn2:incoming>
+      <bpmn2:outgoing>_8DCDBDCE-8323-4C98-BBDB-0EA6F4502C90</bpmn2:outgoing>
+      <bpmn2:ioSpecification id="_JT0mntd5Eem3gK-9mmklmQ">
+        <bpmn2:dataInput id="_FD9C1A41-D293-4D5E-8BDA-77812E72AC2A_clienteInputX" drools:dtype="com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente" itemSubjectRef="__FD9C1A41-D293-4D5E-8BDA-77812E72AC2A_clienteInputXItem" name="cliente"/>
+        <bpmn2:dataInput id="_FD9C1A41-D293-4D5E-8BDA-77812E72AC2A_variablesNegocioInputX" drools:dtype="com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio" itemSubjectRef="__FD9C1A41-D293-4D5E-8BDA-77812E72AC2A_variablesNegocioInputXItem" name="variablesNegocio"/>
+        <bpmn2:dataOutput id="_FD9C1A41-D293-4D5E-8BDA-77812E72AC2A_clienteOutputX" drools:dtype="com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente" itemSubjectRef="__FD9C1A41-D293-4D5E-8BDA-77812E72AC2A_clienteOutputXItem" name="cliente"/>
+        <bpmn2:dataOutput id="_FD9C1A41-D293-4D5E-8BDA-77812E72AC2A_variablesNegocioOutputX" drools:dtype="com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio" itemSubjectRef="__FD9C1A41-D293-4D5E-8BDA-77812E72AC2A_variablesNegocioOutputXItem" name="variablesNegocio"/>
+        <bpmn2:inputSet id="_JT0mn9d5Eem3gK-9mmklmQ">
+          <bpmn2:dataInputRefs>_FD9C1A41-D293-4D5E-8BDA-77812E72AC2A_clienteInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_FD9C1A41-D293-4D5E-8BDA-77812E72AC2A_variablesNegocioInputX</bpmn2:dataInputRefs>
+        </bpmn2:inputSet>
+        <bpmn2:outputSet id="_JT0moNd5Eem3gK-9mmklmQ">
+          <bpmn2:dataOutputRefs>_FD9C1A41-D293-4D5E-8BDA-77812E72AC2A_clienteOutputX</bpmn2:dataOutputRefs>
+          <bpmn2:dataOutputRefs>_FD9C1A41-D293-4D5E-8BDA-77812E72AC2A_variablesNegocioOutputX</bpmn2:dataOutputRefs>
+        </bpmn2:outputSet>
+      </bpmn2:ioSpecification>
+      <bpmn2:dataInputAssociation id="_JT0modd5Eem3gK-9mmklmQ">
+        <bpmn2:sourceRef>cliente</bpmn2:sourceRef>
+        <bpmn2:targetRef>_FD9C1A41-D293-4D5E-8BDA-77812E72AC2A_clienteInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="_JT0motd5Eem3gK-9mmklmQ">
+        <bpmn2:sourceRef>variablesNegocio</bpmn2:sourceRef>
+        <bpmn2:targetRef>_FD9C1A41-D293-4D5E-8BDA-77812E72AC2A_variablesNegocioInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataOutputAssociation id="_JT0mo9d5Eem3gK-9mmklmQ">
+        <bpmn2:sourceRef>_FD9C1A41-D293-4D5E-8BDA-77812E72AC2A_clienteOutputX</bpmn2:sourceRef>
+        <bpmn2:targetRef>cliente</bpmn2:targetRef>
+      </bpmn2:dataOutputAssociation>
+      <bpmn2:dataOutputAssociation id="_JT0mpNd5Eem3gK-9mmklmQ">
+        <bpmn2:sourceRef>_FD9C1A41-D293-4D5E-8BDA-77812E72AC2A_variablesNegocioOutputX</bpmn2:sourceRef>
+        <bpmn2:targetRef>variablesNegocio</bpmn2:targetRef>
+      </bpmn2:dataOutputAssociation>
+    </bpmn2:businessRuleTask>
+    <bpmn2:businessRuleTask id="_F71CF836-5A57-4932-8972-806D3D04587B" drools:ruleFlowGroup="PoliticaA09" name="PoliticaA09Task" implementation="http://www.jboss.org/drools/rule">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[PoliticaA09Task]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>_61F3812D-4D5F-4336-9069-E606F70DE128</bpmn2:incoming>
+      <bpmn2:outgoing>_F259C6CE-E448-4BB0-AC6D-6A57CA48BF28</bpmn2:outgoing>
+      <bpmn2:ioSpecification id="_JT0mpdd5Eem3gK-9mmklmQ">
+        <bpmn2:dataInput id="_F71CF836-5A57-4932-8972-806D3D04587B_clienteInputX" drools:dtype="com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente" itemSubjectRef="__F71CF836-5A57-4932-8972-806D3D04587B_clienteInputXItem" name="cliente"/>
+        <bpmn2:dataInput id="_F71CF836-5A57-4932-8972-806D3D04587B_variablesNegocioInputX" drools:dtype="com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio" itemSubjectRef="__F71CF836-5A57-4932-8972-806D3D04587B_variablesNegocioInputXItem" name="variablesNegocio"/>
+        <bpmn2:dataOutput id="_F71CF836-5A57-4932-8972-806D3D04587B_clienteOutputX" drools:dtype="com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente" itemSubjectRef="__F71CF836-5A57-4932-8972-806D3D04587B_clienteOutputXItem" name="cliente"/>
+        <bpmn2:dataOutput id="_F71CF836-5A57-4932-8972-806D3D04587B_variablesNegocioOutputX" drools:dtype="com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio" itemSubjectRef="__F71CF836-5A57-4932-8972-806D3D04587B_variablesNegocioOutputXItem" name="variablesNegocio"/>
+        <bpmn2:inputSet id="_JT0mptd5Eem3gK-9mmklmQ">
+          <bpmn2:dataInputRefs>_F71CF836-5A57-4932-8972-806D3D04587B_clienteInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_F71CF836-5A57-4932-8972-806D3D04587B_variablesNegocioInputX</bpmn2:dataInputRefs>
+        </bpmn2:inputSet>
+        <bpmn2:outputSet id="_JT0mp9d5Eem3gK-9mmklmQ">
+          <bpmn2:dataOutputRefs>_F71CF836-5A57-4932-8972-806D3D04587B_clienteOutputX</bpmn2:dataOutputRefs>
+          <bpmn2:dataOutputRefs>_F71CF836-5A57-4932-8972-806D3D04587B_variablesNegocioOutputX</bpmn2:dataOutputRefs>
+        </bpmn2:outputSet>
+      </bpmn2:ioSpecification>
+      <bpmn2:dataInputAssociation id="_JT0mqNd5Eem3gK-9mmklmQ">
+        <bpmn2:sourceRef>cliente</bpmn2:sourceRef>
+        <bpmn2:targetRef>_F71CF836-5A57-4932-8972-806D3D04587B_clienteInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="_JT0mqdd5Eem3gK-9mmklmQ">
+        <bpmn2:sourceRef>variablesNegocio</bpmn2:sourceRef>
+        <bpmn2:targetRef>_F71CF836-5A57-4932-8972-806D3D04587B_variablesNegocioInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataOutputAssociation id="_JT0mqtd5Eem3gK-9mmklmQ">
+        <bpmn2:sourceRef>_F71CF836-5A57-4932-8972-806D3D04587B_clienteOutputX</bpmn2:sourceRef>
+        <bpmn2:targetRef>cliente</bpmn2:targetRef>
+      </bpmn2:dataOutputAssociation>
+      <bpmn2:dataOutputAssociation id="_JT0mq9d5Eem3gK-9mmklmQ">
+        <bpmn2:sourceRef>_F71CF836-5A57-4932-8972-806D3D04587B_variablesNegocioOutputX</bpmn2:sourceRef>
+        <bpmn2:targetRef>variablesNegocio</bpmn2:targetRef>
+      </bpmn2:dataOutputAssociation>
+    </bpmn2:businessRuleTask>
+  </bpmn2:process>
+  <bpmndi:BPMNDiagram id="_JT0mrNd5Eem3gK-9mmklmQ">
+    <bpmndi:BPMNPlane id="_JT0mrdd5Eem3gK-9mmklmQ" bpmnElement="QuskiAutomotriz.FlujoPoliticas">
+      <bpmndi:BPMNShape id="shape__F71CF836-5A57-4932-8972-806D3D04587B" bpmnElement="_F71CF836-5A57-4932-8972-806D3D04587B">
+        <dc:Bounds height="50.0" width="196.0" x="193.0" y="414.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape__FD9C1A41-D293-4D5E-8BDA-77812E72AC2A" bpmnElement="_FD9C1A41-D293-4D5E-8BDA-77812E72AC2A">
+        <dc:Bounds height="50.0" width="196.0" x="193.0" y="734.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape__D30CD2C0-D352-450F-B8A4-8AA3841AD360" bpmnElement="_D30CD2C0-D352-450F-B8A4-8AA3841AD360">
+        <dc:Bounds height="50.0" width="196.0" x="193.0" y="974.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape__09D634CC-4AD3-4532-8EBD-D01AD6AD88F8" bpmnElement="_09D634CC-4AD3-4532-8EBD-D01AD6AD88F8">
+        <dc:Bounds height="50.0" width="196.0" x="193.0" y="334.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape__206E5C81-8DD0-47C7-86F3-6380978B2608" bpmnElement="_206E5C81-8DD0-47C7-86F3-6380978B2608">
+        <dc:Bounds height="50.0" width="196.0" x="193.0" y="94.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape__45AAF86B-38E6-4D73-AC4C-DE86DD1EEE3B" bpmnElement="_45AAF86B-38E6-4D73-AC4C-DE86DD1EEE3B">
+        <dc:Bounds height="50.0" width="196.0" x="193.0" y="1054.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape__67E4E040-D542-487C-9457-872E38CF2369" bpmnElement="_67E4E040-D542-487C-9457-872E38CF2369">
+        <dc:Bounds height="50.0" width="196.0" x="193.0" y="654.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape__0B2D8EB6-5A2F-4718-BE60-04FAE7868058" bpmnElement="_0B2D8EB6-5A2F-4718-BE60-04FAE7868058">
+        <dc:Bounds height="50.0" width="196.0" x="193.0" y="574.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape__96F2A8A3-7B4A-4B4F-AAEF-F62C1FB5FE75" bpmnElement="_96F2A8A3-7B4A-4B4F-AAEF-F62C1FB5FE75">
+        <dc:Bounds height="50.0" width="196.0" x="193.0" y="814.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape__1D682D22-DC2B-4584-9A71-A6827CBCEF80" bpmnElement="_1D682D22-DC2B-4584-9A71-A6827CBCEF80">
+        <dc:Bounds height="56.0" width="56.0" x="263.0" y="1132.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape__EB100301-DFEB-4755-87D3-7C3B85AFB420" bpmnElement="_EB100301-DFEB-4755-87D3-7C3B85AFB420">
+        <dc:Bounds height="56.0" width="56.0" x="263.0" y="8.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape__36011396-AE9E-44CE-A953-FAABEAEC5D89" bpmnElement="_36011396-AE9E-44CE-A953-FAABEAEC5D89">
+        <dc:Bounds height="50.0" width="196.0" x="193.0" y="494.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape__C06E701D-11F0-47B1-865D-917173845761" bpmnElement="_C06E701D-11F0-47B1-865D-917173845761">
+        <dc:Bounds height="50.0" width="196.0" x="193.0" y="174.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape__D831150B-7C30-4692-A512-B08E24256063" bpmnElement="_D831150B-7C30-4692-A512-B08E24256063">
+        <dc:Bounds height="50.0" width="196.0" x="193.0" y="254.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape__C2663350-EDCB-4E35-8082-C298093CFCD3" bpmnElement="_C2663350-EDCB-4E35-8082-C298093CFCD3">
+        <dc:Bounds height="50.0" width="196.0" x="193.0" y="894.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="edge_shape__36011396-AE9E-44CE-A953-FAABEAEC5D89_to_shape__F71CF836-5A57-4932-8972-806D3D04587B" bpmnElement="_61F3812D-4D5F-4336-9069-E606F70DE128">
+        <di:waypoint xsi:type="dc:Point" x="291.0" y="519.0"/>
+        <di:waypoint xsi:type="dc:Point" x="291.0" y="439.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_shape__F71CF836-5A57-4932-8972-806D3D04587B_to_shape__09D634CC-4AD3-4532-8EBD-D01AD6AD88F8" bpmnElement="_F259C6CE-E448-4BB0-AC6D-6A57CA48BF28">
+        <di:waypoint xsi:type="dc:Point" x="291.0" y="439.0"/>
+        <di:waypoint xsi:type="dc:Point" x="291.0" y="359.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_shape__96F2A8A3-7B4A-4B4F-AAEF-F62C1FB5FE75_to_shape__FD9C1A41-D293-4D5E-8BDA-77812E72AC2A" bpmnElement="_5CA600DA-BB3C-4F3B-80EE-217B9E625402">
+        <di:waypoint xsi:type="dc:Point" x="291.0" y="839.0"/>
+        <di:waypoint xsi:type="dc:Point" x="291.0" y="759.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_shape__FD9C1A41-D293-4D5E-8BDA-77812E72AC2A_to_shape__67E4E040-D542-487C-9457-872E38CF2369" bpmnElement="_8DCDBDCE-8323-4C98-BBDB-0EA6F4502C90">
+        <di:waypoint xsi:type="dc:Point" x="291.0" y="759.0"/>
+        <di:waypoint xsi:type="dc:Point" x="291.0" y="679.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_shape__45AAF86B-38E6-4D73-AC4C-DE86DD1EEE3B_to_shape__D30CD2C0-D352-450F-B8A4-8AA3841AD360" bpmnElement="_BE175AD9-6116-4E2E-9770-9B7C8879A743">
+        <di:waypoint xsi:type="dc:Point" x="291.0" y="1079.0"/>
+        <di:waypoint xsi:type="dc:Point" x="291.0" y="1024.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_shape__D30CD2C0-D352-450F-B8A4-8AA3841AD360_to_shape__C2663350-EDCB-4E35-8082-C298093CFCD3" bpmnElement="_B64C9973-524F-47D1-8F89-CE0F9BBCCC7A">
+        <di:waypoint xsi:type="dc:Point" x="291.0" y="999.0"/>
+        <di:waypoint xsi:type="dc:Point" x="291.0" y="919.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_shape__09D634CC-4AD3-4532-8EBD-D01AD6AD88F8_to_shape__D831150B-7C30-4692-A512-B08E24256063" bpmnElement="_60DA32D2-ED17-4C97-9260-F31353344AB3">
+        <di:waypoint xsi:type="dc:Point" x="291.0" y="359.0"/>
+        <di:waypoint xsi:type="dc:Point" x="291.0" y="279.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_shape__C06E701D-11F0-47B1-865D-917173845761_to_shape__206E5C81-8DD0-47C7-86F3-6380978B2608" bpmnElement="_6CE77B36-3677-4F27-B8A8-A1066337452C">
+        <di:waypoint xsi:type="dc:Point" x="291.0" y="199.0"/>
+        <di:waypoint xsi:type="dc:Point" x="291.0" y="119.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_shape__206E5C81-8DD0-47C7-86F3-6380978B2608_to_shape__EB100301-DFEB-4755-87D3-7C3B85AFB420" bpmnElement="_C7D0B25D-2DE0-4393-BB80-99694A75F419">
+        <di:waypoint xsi:type="dc:Point" x="291.0" y="94.0"/>
+        <di:waypoint xsi:type="dc:Point" x="291.0" y="64.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_shape__1D682D22-DC2B-4584-9A71-A6827CBCEF80_to_shape__45AAF86B-38E6-4D73-AC4C-DE86DD1EEE3B" bpmnElement="_385DD5A2-E1DA-4EE5-80E8-0F2811934D8B">
+        <di:waypoint xsi:type="dc:Point" x="291.0" y="1160.0"/>
+        <di:waypoint xsi:type="dc:Point" x="291.0" y="1079.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_shape__67E4E040-D542-487C-9457-872E38CF2369_to_shape__0B2D8EB6-5A2F-4718-BE60-04FAE7868058" bpmnElement="_1EC9E370-A67B-4F1B-BDFC-E65CD3AF6BE7">
+        <di:waypoint xsi:type="dc:Point" x="291.0" y="679.0"/>
+        <di:waypoint xsi:type="dc:Point" x="291.0" y="599.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_shape__0B2D8EB6-5A2F-4718-BE60-04FAE7868058_to_shape__36011396-AE9E-44CE-A953-FAABEAEC5D89" bpmnElement="_53A38E8F-55C2-4D97-9EBC-917256CAF7BD">
+        <di:waypoint xsi:type="dc:Point" x="291.0" y="599.0"/>
+        <di:waypoint xsi:type="dc:Point" x="291.0" y="519.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_shape__C2663350-EDCB-4E35-8082-C298093CFCD3_to_shape__96F2A8A3-7B4A-4B4F-AAEF-F62C1FB5FE75" bpmnElement="_E0649FDE-0E85-4E24-A6AA-A208C24B8769">
+        <di:waypoint xsi:type="dc:Point" x="291.0" y="919.0"/>
+        <di:waypoint xsi:type="dc:Point" x="291.0" y="839.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="edge_shape__D831150B-7C30-4692-A512-B08E24256063_to_shape__C06E701D-11F0-47B1-865D-917173845761" bpmnElement="_0F0129E7-4B7D-410E-90E6-5CBA3A89BCB5">
+        <di:waypoint xsi:type="dc:Point" x="291.0" y="279.0"/>
+        <di:waypoint xsi:type="dc:Point" x="291.0" y="199.0"/>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+  <bpmn2:relationship id="_JT0mrtd5Eem3gK-9mmklmQ" type="BPSimData">
+    <bpmn2:extensionElements>
+      <bpsim:BPSimData>
+        <bpsim:Scenario xsi:type="bpsim:Scenario" id="default" name="Simulationscenario">
+          <bpsim:ScenarioParameters xsi:type="bpsim:ScenarioParameters"/>
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_F71CF836-5A57-4932-8972-806D3D04587B" id="_JT0mr9d5Eem3gK-9mmklmQ">
+            <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
+              <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
+                <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+            <bpsim:ResourceParameters xsi:type="bpsim:ResourceParameters">
+              <bpsim:Availability xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:Availability>
+              <bpsim:Quantity xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:Quantity>
+            </bpsim:ResourceParameters>
+            <bpsim:CostParameters xsi:type="bpsim:CostParameters">
+              <bpsim:UnitCost xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:UnitCost>
+            </bpsim:CostParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_FD9C1A41-D293-4D5E-8BDA-77812E72AC2A" id="_JT0msNd5Eem3gK-9mmklmQ">
+            <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
+              <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
+                <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+            <bpsim:ResourceParameters xsi:type="bpsim:ResourceParameters">
+              <bpsim:Availability xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:Availability>
+              <bpsim:Quantity xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:Quantity>
+            </bpsim:ResourceParameters>
+            <bpsim:CostParameters xsi:type="bpsim:CostParameters">
+              <bpsim:UnitCost xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:UnitCost>
+            </bpsim:CostParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_D30CD2C0-D352-450F-B8A4-8AA3841AD360" id="_JT0msdd5Eem3gK-9mmklmQ">
+            <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
+              <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
+                <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+            <bpsim:ResourceParameters xsi:type="bpsim:ResourceParameters">
+              <bpsim:Availability xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:Availability>
+              <bpsim:Quantity xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:Quantity>
+            </bpsim:ResourceParameters>
+            <bpsim:CostParameters xsi:type="bpsim:CostParameters">
+              <bpsim:UnitCost xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:UnitCost>
+            </bpsim:CostParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_09D634CC-4AD3-4532-8EBD-D01AD6AD88F8" id="_JT0mstd5Eem3gK-9mmklmQ">
+            <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
+              <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
+                <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+            <bpsim:ResourceParameters xsi:type="bpsim:ResourceParameters">
+              <bpsim:Availability xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:Availability>
+              <bpsim:Quantity xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:Quantity>
+            </bpsim:ResourceParameters>
+            <bpsim:CostParameters xsi:type="bpsim:CostParameters">
+              <bpsim:UnitCost xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:UnitCost>
+            </bpsim:CostParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_206E5C81-8DD0-47C7-86F3-6380978B2608" id="_JT0ms9d5Eem3gK-9mmklmQ">
+            <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
+              <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
+                <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+            <bpsim:ResourceParameters xsi:type="bpsim:ResourceParameters">
+              <bpsim:Availability xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:Availability>
+              <bpsim:Quantity xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:Quantity>
+            </bpsim:ResourceParameters>
+            <bpsim:CostParameters xsi:type="bpsim:CostParameters">
+              <bpsim:UnitCost xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:UnitCost>
+            </bpsim:CostParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_45AAF86B-38E6-4D73-AC4C-DE86DD1EEE3B" id="_JT0mtNd5Eem3gK-9mmklmQ">
+            <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
+              <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
+                <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+            <bpsim:ResourceParameters xsi:type="bpsim:ResourceParameters">
+              <bpsim:Availability xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:Availability>
+              <bpsim:Quantity xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:Quantity>
+            </bpsim:ResourceParameters>
+            <bpsim:CostParameters xsi:type="bpsim:CostParameters">
+              <bpsim:UnitCost xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:UnitCost>
+            </bpsim:CostParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_67E4E040-D542-487C-9457-872E38CF2369" id="_JT0mtdd5Eem3gK-9mmklmQ">
+            <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
+              <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
+                <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+            <bpsim:ResourceParameters xsi:type="bpsim:ResourceParameters">
+              <bpsim:Availability xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:Availability>
+              <bpsim:Quantity xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:Quantity>
+            </bpsim:ResourceParameters>
+            <bpsim:CostParameters xsi:type="bpsim:CostParameters">
+              <bpsim:UnitCost xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:UnitCost>
+            </bpsim:CostParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_0B2D8EB6-5A2F-4718-BE60-04FAE7868058" id="_JT0mttd5Eem3gK-9mmklmQ">
+            <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
+              <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
+                <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+            <bpsim:ResourceParameters xsi:type="bpsim:ResourceParameters">
+              <bpsim:Availability xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:Availability>
+              <bpsim:Quantity xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:Quantity>
+            </bpsim:ResourceParameters>
+            <bpsim:CostParameters xsi:type="bpsim:CostParameters">
+              <bpsim:UnitCost xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:UnitCost>
+            </bpsim:CostParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_96F2A8A3-7B4A-4B4F-AAEF-F62C1FB5FE75" id="_JT1NoNd5Eem3gK-9mmklmQ">
+            <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
+              <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
+                <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+            <bpsim:ResourceParameters xsi:type="bpsim:ResourceParameters">
+              <bpsim:Availability xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:Availability>
+              <bpsim:Quantity xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:Quantity>
+            </bpsim:ResourceParameters>
+            <bpsim:CostParameters xsi:type="bpsim:CostParameters">
+              <bpsim:UnitCost xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:UnitCost>
+            </bpsim:CostParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_1D682D22-DC2B-4584-9A71-A6827CBCEF80" id="_JT1Nodd5Eem3gK-9mmklmQ">
+            <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
+              <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
+                <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_36011396-AE9E-44CE-A953-FAABEAEC5D89" id="_JT1Notd5Eem3gK-9mmklmQ">
+            <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
+              <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
+                <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+            <bpsim:ResourceParameters xsi:type="bpsim:ResourceParameters">
+              <bpsim:Availability xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:Availability>
+              <bpsim:Quantity xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:Quantity>
+            </bpsim:ResourceParameters>
+            <bpsim:CostParameters xsi:type="bpsim:CostParameters">
+              <bpsim:UnitCost xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:UnitCost>
+            </bpsim:CostParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_C06E701D-11F0-47B1-865D-917173845761" id="_JT1No9d5Eem3gK-9mmklmQ">
+            <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
+              <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
+                <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+            <bpsim:ResourceParameters xsi:type="bpsim:ResourceParameters">
+              <bpsim:Availability xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:Availability>
+              <bpsim:Quantity xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:Quantity>
+            </bpsim:ResourceParameters>
+            <bpsim:CostParameters xsi:type="bpsim:CostParameters">
+              <bpsim:UnitCost xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:UnitCost>
+            </bpsim:CostParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_D831150B-7C30-4692-A512-B08E24256063" id="_JT1NpNd5Eem3gK-9mmklmQ">
+            <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
+              <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
+                <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+            <bpsim:ResourceParameters xsi:type="bpsim:ResourceParameters">
+              <bpsim:Availability xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:Availability>
+              <bpsim:Quantity xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:Quantity>
+            </bpsim:ResourceParameters>
+            <bpsim:CostParameters xsi:type="bpsim:CostParameters">
+              <bpsim:UnitCost xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:UnitCost>
+            </bpsim:CostParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_C2663350-EDCB-4E35-8082-C298093CFCD3" id="_JT1Npdd5Eem3gK-9mmklmQ">
+            <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
+              <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
+                <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+            <bpsim:ResourceParameters xsi:type="bpsim:ResourceParameters">
+              <bpsim:Availability xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:Availability>
+              <bpsim:Quantity xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:Quantity>
+            </bpsim:ResourceParameters>
+            <bpsim:CostParameters xsi:type="bpsim:CostParameters">
+              <bpsim:UnitCost xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:UnitCost>
+            </bpsim:CostParameters>
+          </bpsim:ElementParameters>
+        </bpsim:Scenario>
+      </bpsim:BPSimData>
+    </bpmn2:extensionElements>
+    <bpmn2:source>_JTzYcNd5Eem3gK-9mmklmQ</bpmn2:source>
+    <bpmn2:target>_JTzYcNd5Eem3gK-9mmklmQ</bpmn2:target>
+  </bpmn2:relationship>
+</bpmn2:definitions>

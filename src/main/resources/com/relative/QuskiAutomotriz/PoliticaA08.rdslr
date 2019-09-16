@@ -1,0 +1,15 @@
+package com.relative.QuskiAutomotriz;
+
+import java.lang.Number;
+import com.relative.QuskiAutomotriz.ObjetosNegocio.VariablesNegocio;
+import com.relative.QuskiAutomotriz.ObjetosNegocio.Cliente;
+
+rule "PoliticaA08"
+	dialect "mvel"
+	ruleflow-group "PoliticaA08"
+	when
+		>variablesNegocio : VariablesNegocio( )
+		>cliente : Cliente( actividadEconomica == "INDEPENDIENTE" && eval( (cliente.getCuota() /cliente.getLiquidezBruta()) > 0.7 ))
+	then
+		>variablesNegocio.getCodigosPoliticas().add("8");
+end
